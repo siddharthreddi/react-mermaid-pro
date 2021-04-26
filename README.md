@@ -15,12 +15,17 @@ npm install --save react-mermaid-pro
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-mermaid-pro'
-import 'react-mermaid-pro/dist/index.css'
+import MermaidPro from 'react-mermaid-pro'
+
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <MermaidPro definition={`sequenceDiagram
+  A->> B: Query
+  B->> C: Forward query
+  Note right of C: Thinking...
+  C->> B: Response
+  B->> A: Forward response  `} _key="my-graph" syntaxError={<span>error</span>} />
   }
 }
 ```
