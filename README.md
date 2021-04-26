@@ -29,6 +29,13 @@ class Example extends Component {
   }
 }
 ```
+### Props
+
+| Property        | Description           | Type  | 
+| ------------- |:-------------:| -----:| 
+| definition      | Mermaid code | string |  
+| _key      |   Unique Key    |  string  | 
+| syntaxError | Mermaid syntax error  |  boolean | React.ReactNode | ((message: string) => React.ReactNode)   |
 
 ## License
 
