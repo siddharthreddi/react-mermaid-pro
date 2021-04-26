@@ -35,7 +35,7 @@ class Example extends Component {
 | ------------- |:-------------:| -----:| 
 | definition      | Mermaid code | string |  
 | _key      |   Unique Key    |  string  | 
-| syntaxError | Mermaid syntax error  |  boolean | React.ReactNode | ((message: string) => React.ReactNode)   |
+| syntaxError | Mermaid syntax error  |  boolean or  React.ReactNode or ((message: string) => React.ReactNode)   |
 
 ## License
 
